@@ -1,0 +1,37 @@
+@keyframes pathover{0%,30%{stroke:#e6e6e6}100%{stroke:#505ca0}}
+
+path{
+	fill:#eee;
+	stroke:#e6e6e6;
+	stroke-width:1px;
+	stroke-alignment:center;
+	vector-effect:non-scaling-stroke;
+	transition:fill .4s ease;
+	z-index:-1;
+}
+
+path:hover{
+	fill:#4859b8;
+	stroke:#505ca0;
+	stroke-alignment:outside;
+	animation:pathover .2s forwards;
+	cursor:pointer;
+}
+
+
+path:hover{position:relative}
+
+path:after {
+  position: absolute;
+  display:block;
+  top:0%;
+  left:0%;
+
+  content: "attr(id)";
+ 
+  background-color: #2B222A;
+  border-radius: 5px;
+  
+  
+}
+
